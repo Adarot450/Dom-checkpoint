@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/styling.css">
+    <title>Document</title>
+</head>
+
+<body id="body">
+
+    <div id="Item">
+
+        <p>Item 1</p>
+        <p id="Price">10</p>
+
+        <div class="flex">
+            <button onclick=minus() id="minus">
+                <p>-</p>
+            </button>
+            <p id="quantity">0</p>
+            <button onclick=plus()>
+                <p>+</p>
+            </button>
+        </div>
+
+        <div class="fav">
+            <button onclick=love()>
+                <i class="fas fa-heart fa-2x" id="heart"></i>
+            </button>
+        </div>
+
+        <div class="delete">
+            <button onclick=remove()>
+                <i class="fas fa-trash fa-2x"></i>
+            </button>
+        </div>
+
+        <div class="total">
+            <p id="Total">0</p>
+        </div>
+
+        <div class="checkout">
+            <button onclick=checkout()>
+                <p>checkout</p>
+            </button>
+            <p id="thanks"></p>
+        </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
